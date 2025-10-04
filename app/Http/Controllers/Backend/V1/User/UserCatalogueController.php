@@ -13,6 +13,11 @@ class UserCatalogueController extends BaseController
 
     public function index(): Response
     {
-        return Inertia::render('user.user_catalogue.index');
+        return Inertia::render('user/user_catalogue/index');
+    }
+
+    public function create(): Response
+    {
+        return Inertia::render('user/user_catalogue/save');
     }
 }
